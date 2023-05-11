@@ -1,6 +1,3 @@
 {
-    "mongoURI":"mongodb+srv://irfidupang:amikom123@clustersosmed.hgang0p.mongodb.net/?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken",
-    "githubClientId": "66daab2c712e70adf273",
-    "githubSecret": "7c43463e5cc4bd02df30fe3676bd1df6aa06e186"
+    "mongoURI":"mongodb+srv://irfidupang:amikom123@ecommerce-cluster.c5xfp2t.mongodb.net/?retryWrites=true&w=majority"
 }

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const UserSchema = mongoose.Schema({
     name: {
@@ -37,7 +37,7 @@ const UserSchema = mongoose.Schema({
         type: Array,
         default: []
     },
-    orders: [{type: Schema.Type.Object, ref: 'Order'}]
+    // orders: [{type: mongoose.Schema.Type.ObjectId, ref: 'Order'}]
 
 }, {minimize: false});
 
