@@ -6,7 +6,8 @@ const http = require('http');
 const server = http.createServer(app)
 const {Server} = require('socket.io');
 const connectDB = require('./config/db');
-const userRoutes = require('./routes/userRoutes')
+const userRoutes = require('./routes/userRoutes');
+const productRoutes = require('./routes/productRoutes');
 const io = new Server(server, {
     cors: '*',
     method: '*'
@@ -17,7 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 connectDB()
-app.use('/users', userRoutes)
+app.use('/users', userRoutes);
+app.use('/products', productRoutes);
 
 server.listen(8080, () => {
     console.log('server runing in port', 8080)
